@@ -1,12 +1,12 @@
-﻿using Telegram.Bot;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+using Telegram.Bot;
 using Telegram.Bot.Types;
 using Telegram.Bot.Polling;
 using Telegram.Bot.Types.Enums;
 
 // See https://aka.ms/new-console-template for more information
 
-using var cts = new CancellationTokenSource();
+CancellationTokenSource cts = new CancellationTokenSource();
 
 var bot = new TelegramBotClient("7647109657:AAHeU6yOJ6EjaDcUKNFUb6RVFzsbgMyLoPA", cancellationToken: cts.Token);
 var me = await bot.GetMe();
