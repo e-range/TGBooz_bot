@@ -15,7 +15,7 @@ bot.OnError += OnError;
 bot.OnMessage += OnMessage;
 bot.OnUpdate += OnUpdate;
 
-Console.WriteLine($"@{me.Username} is running... Press Enter to terminate!!!");
+Console.WriteLine($"@{me.Username} is running... Press Enter to terminate! =)");
 Console.ReadLine();
 cts.Cancel(); // stop the bot
 
